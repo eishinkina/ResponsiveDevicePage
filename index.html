@@ -1,50 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mobile-page</title>
   </head>
-  <body>
-    <header>
-      <a href="#">GetWach</a>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Как использовать</a>
+  <body class="page__body">
+    <header class="page__header page-header">
+      <a class="page-header__logo" href="#">GetWach</a>
+      <nav class="page-header__nav">
+        <ul class="page-header__menu main-menu">
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Как использовать</a>
           </li>
-          <li>
-            <a href="#">Партнерам</a>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Партнерам</a>
           </li>
-          <li>
-            <a href="#">Скачать</a>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Скачать</a>
           </li>
-          <li>
-            <a href="#">Отзывы</a>
+          <li class="main-menu__item">
+            <a class="main-menu__link" href="#">Отзывы</a>
           </li>
         </ul>
       </nav>
-      <button type="button">Получить доступ</button>
+      <button class="page-header__btn btn btn--transparent" type="button">
+        Получить доступ
+      </button>
     </header>
-    <main>
-      <section>
-        <h1>
+    <main class="page__main">
+      <section class="hero">
+        <h1 class="section-title hero__title">
           Поиск ближайшей свободной автомойки и бронирование на удобное время.
         </h1>
-        <p>
+        <p class="hero__text">
           Мы поможем сохранить ваше время для более интересных занятий, чем
           стоять в очереди.
         </p>
-        <button type="button">Получить доступ</button>
-        <img src="" alt="" width="612" height="576" />
+        <button class="hero__btn btn btn--blue" type="button">
+          Получить доступ
+        </button>
+        <img class="hero__img" src="" alt="" width="612" height="576" />
       </section>
 
-      <section>
-        <img src="" alt="" width="450" height="675" />
-        <h2>Быстрый старт:</h2>
-        <ul>
-          <li>
+      <section class="start-steps">
+        <img class="start-steps__img" src="" alt="" width="450" height="675" />
+        <h2 class="section-title start-steps__title">Быстрый старт:</h2>
+        <ul class="start-steps__list steps-list">
+          <li class="step__item step">
             <svg
+              class="step__icon"
               xmlns="http://www.w3.org/2000/svg"
               width="36"
               height="36"
@@ -56,11 +61,14 @@
                 fill="#446DF6"
               />
             </svg>
-            <p>Скачай и зарегистрируйся</p>
-            <p>Наше приложение доступно в Apple Store и Google Play</p>
+            <p class="step__title">Скачай и зарегистрируйся</p>
+            <p class="step__descr">
+              Наше приложение доступно в Apple Store и Google Play
+            </p>
           </li>
-          <li>
+          <li class="step__item step">
             <svg
+              class="step__icon"
               xmlns="http://www.w3.org/2000/svg"
               width="36"
               height="36"
@@ -72,11 +80,14 @@
                 fill="#446DF6"
               />
             </svg>
-            <p>Выбери ближайшую автомойку</p>
-            <p>Из свободных поблизости или оставь заказ на удобное время</p>
+            <p class="step__title">Выбери ближайшую автомойку</p>
+            <p class="step__descr">
+              Из свободных поблизости или оставь заказ на удобное время
+            </p>
           </li>
-          <li>
+          <li class="step__item step">
             <svg
+              class="step__icon"
               xmlns="http://www.w3.org/2000/svg"
               width="36"
               height="36"
@@ -88,11 +99,14 @@
                 fill="#446DF6"
               />
             </svg>
-            <p>Выбери дополнительные услуги</p>
-            <p>Можешь их добавить к своему основному заказу</p>
+            <p class="step__title">Выбери дополнительные услуги</p>
+            <p class="step__descr">
+              Можешь их добавить к своему основному заказу
+            </p>
           </li>
-          <li>
+          <li class="step__item step">
             <svg
+              class="step__icon"
               xmlns="http://www.w3.org/2000/svg"
               width="36"
               height="36"
@@ -104,90 +118,127 @@
                 fill="#446DF6"
               />
             </svg>
-            <p>Оплати внутри приложения</p>
-            <p>Бесконтактная оплата внутри приложения и прозрачные цены</p>
+            <p class="step__title">Оплати внутри приложения</p>
+            <p class="step__descr">
+              Бесконтактная оплата внутри приложения и прозрачные цены
+            </p>
           </li>
         </ul>
       </section>
 
-      <section>
-        <h1>Стань нашим партнером и начни зарабатывать:</h1>
-        <p>
+      <section class="exellents">
+        <h1 class="section-title section-title--small exellents__title">
+          Стань нашим партнером и начни зарабатывать:
+        </h1>
+        <p class="exellents__subtitle">
           Автоматизируй свой бизнес вместе с нами. Подключись к нашей системе
           бронирования, что бы получать новых клиентов и распределить нагрузку
           равномерно на весь день. Мы предоставляем удобные инструменты для
           формирования отчетов в несколько кликов и многое другое.
         </p>
-        <ul>
-          <li>Просмотривайте историю заказа</li>
-          <li>Создание отчета неделя/месяц/год</li>
-          <li>Обратная связь от клиентов</li>
-          <li>Обратная связь от клиентов</li>
-          <li>Обратная связь от клиентов</li>
+        <ul class="exellents__list">
+          <li class="exellents__item exellents__item--history">
+            Просмотривайте историю заказа
+          </li>
+          <li class="exellents__item exellents__item--report">
+            Создание отчета неделя/месяц/год
+          </li>
+          <li class="exellents__item exellents__item--callback">
+            Обратная связь от клиентов
+          </li>
+          <li class="exellents__item exellents__item--control">
+            Обратная связь от клиентов
+          </li>
+          <li class="exellents__item exellents__item--payment">
+            Обратная связь от клиентов
+          </li>
         </ul>
-        <button type="button">Стать партнером</button>
+        <button class="exellents__btn btn btn--blue" type="button">
+          Стать партнером
+        </button>
       </section>
 
-      <section>
-        <h2>Хватит тратить свое время в очередях</h2>
-        <p>
+      <section class="apps">
+        <h2 class="section-title section-title--light apps__title">
+          Хватит тратить свое время в очередях
+        </h2>
+        <p class="apps__subtitle">
           Приложение скоро будет доступно для бета тестирования в AppStore и
           Google Play
         </p>
-        <ul>
-          <li>
-            <a href="">
-              <img src="" alt="" width="166" height="54" />
+        <ul class="apps__list">
+          <li class="apps__item">
+            <a href="" class="apps__link">
+              <img class="apps__icon" src="" alt="" width="166" height="54" />
             </a>
           </li>
-          <li>
-            <a href="">
-              <img src="" alt="" width="166" height="54" />
+          <li class="apps__item">
+            <a href="" class="apps__link">
+              <img class="apps__icon" src="" alt="" width="166" height="54" />
             </a>
           </li>
         </ul>
-        <img src="" alt="" width="522" height="438" />
+        <img class="apps__img" src="" alt="" width="522" height="438" />
       </section>
 
-      <section>
-        <h2>Отзывы о приложении</h2>
-        <article>
-          <p>
+      <section class="reviews">
+        <h2 class="section-title reviews__title">Отзывы о приложении</h2>
+        <article class="reviews__item">
+          <p class="reviews__text">
             Таким образом консультация с широким активом влечет за собой процесс
             внедрения и модернизации направлений прогрессивного развития.
             Разнообразный и богатый опыт сложившаяся структура организации
             обеспечивает широкому кругу (специалистов) участие в формировании
             модели развития.
           </p>
-          <footer>
-            <img src="" alt="" width="80" height="80" />
-            <p>John Doe</p>
-            <p>Водитель</p>
+          <footer class="reviews__author">
+            <img
+              class="reviews__author-img"
+              class=""
+              src=""
+              alt=""
+              width="80"
+              height="80"
+            />
+            <p class="reviews__author-name">John Doe</p>
+            <p class="reviews__author-position">Водитель</p>
           </footer>
         </article>
-        <button type="button"><</button>
-        <button type="button">></button>
+        <button
+          class="reviews__slider-btn reviews__slider-btn--next"
+          type="button"
+        >
+          <
+        </button>
+        <button
+          class="reviews__slider-btn reviews__slider-btn--prev"
+          type="button"
+        >
+          >
+        </button>
       </section>
     </main>
-    <footer>
-      <a href="#">GetWach</a>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">Как использовать</a>
+    <footer class="page__footer page-footer">
+      <a class="page-footer__logo" href="#">GetWach</a>
+      <nav class="page-footer__nav">
+        <ul class="footer-menu">
+          <li class="footer-menu__item">
+            <a class="footer-menu__link" href="#">Как использовать</a>
           </li>
-          <li>
-            <a href="#">Партнерам</a>
+          <li class="footer-menu__item">
+            <a class="footer-menu__link" href="#">Партнерам</a>
           </li>
-          <li>
-            <a href="#">Скачать</a>
+          <li class="footer-menu__item">
+            <a class="footer-menu__link" href="#">Скачать</a>
           </li>
-          <li>
-            <a href="#">Отзывы</a>
+          <li class="footer-menu__item">
+            <a class="footer-menu__link" href="#">Отзывы</a>
           </li>
         </ul>
       </nav>
-      <button type="button">Получить доступ</button>
+      <button class="page-footer__btn btn btn--transparent" type="button">
+        Получить доступ
+      </button>
     </footer>
   </body>
 </html>
